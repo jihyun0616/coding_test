@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 32412 KB, 시간: 44 ms
+메모리: 32412 KB, 시간: 36 ms
 
 ### 분류
 
@@ -12,7 +12,7 @@
 
 ### 제출 일자
 
-2025년 3월 21일 01:22:03
+2025년 3월 21일 01:37:41
 
 ### 문제 설명
 
@@ -46,25 +46,3 @@ P 5 h 3 k x</pre>
 
  <p>영석이가 세로로 읽은 순서대로 글자들을 출력한다. 이때, 글자들을 공백 없이 연속해서 출력한다. </p>
 
-### 첫번째 정답
-```python
-word = []
-max_len = 0 
-
-for i in range(5):
-    inputValue = list(input())  
-    word.append(inputValue)
-    if max_len <= len(inputValue):  
-        max_len = len(inputValue)
-
-for i in range(5):
-    if len(word[i]) < max_len: 
-        for j in range(max_len - len(word[i])):
-            word[i].append(' ') 
-
-for i in range(max_len):
-    for j in range(5):
-        if(word[j][i]!=' '):
-            print(word[j][i],end="")
-
-```

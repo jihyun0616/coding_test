@@ -1,18 +1,6 @@
-word = []
-max_len = 0 
+word = [input() for i in range(5)] #리스트 컴프리헨션
 
-for i in range(5):
-    inputValue = list(input())  
-    word.append(inputValue)
-    if max_len <= len(inputValue):  
-        max_len = len(inputValue)
-
-for i in range(5):
-    if len(word[i]) < max_len: 
-        for j in range(max_len - len(word[i])):
-            word[i].append(' ') 
-
-for i in range(max_len):
-    for j in range(5):
-        if(word[j][i]!=' '):
-            print(word[j][i],end="")
+for j in range(15):
+    for i in range(5):
+        if j<len(word[i]):
+            print(word[i][j],end="")

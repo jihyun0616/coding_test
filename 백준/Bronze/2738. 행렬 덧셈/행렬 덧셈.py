@@ -2,7 +2,6 @@ N, M = map(int, input().split())
 
 A=list()
 B=list()
-inputValue=list()
 
 for i in range(N): #A에 list로 저장
     inputValue = list(map(int, input().split()))

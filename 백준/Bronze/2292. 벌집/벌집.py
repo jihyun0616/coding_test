@@ -1,5 +1,5 @@
 N=int(input())
-arr_list = []
+
 
 # 1   
 # 2 ~ 7 >> 1*6+1 >> 1+6
@@ -17,4 +17,3 @@ for i in range(1,1000000000):
     room+=1
 
 print(room)
-
